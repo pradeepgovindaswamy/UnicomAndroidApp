@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SimpleChatApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_chat__list">Chat_List</string>
+    <string name="title_activity_chatbox">Chatbox</string>
+    <string name="title_activity_real_login">RealLogin</string>
+</resources>

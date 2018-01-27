@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context="com.makeathon.enable.simplechatapp.SingleHand">
+
+
+<EditText
+    android:id="@+id/editText1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#c9c9f1"
+    android:layout_margin="50dp"
+    android:padding="5dp"
+    android:layout_alignParentTop="true"/>
+
+<com.makeathon.enable.simplechatapp.Mykeyboard
+    android:id="@+id/keyboard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

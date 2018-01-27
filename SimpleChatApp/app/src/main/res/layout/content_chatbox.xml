@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context="com.makeathon.enable.simplechatapp.Chatbox"
+                tools:showIn="@layout/activity_chatbox">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl1"
+        android:layout_marginBottom="70dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycleV"
+                android:scrollbars="vertical">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl2"
+        android:layout_alignParentBottom="true">
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/some"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_weight="0.5"
+            app:cardBackgroundColor="#4354A4"
+            app:cardCornerRadius="10dp">
+
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/canvas"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/send"
+            android:layout_alignBottom="@+id/send"
+            android:layout_alignEnd="@+id/send"
+            android:layout_alignRight="@+id/send"
+            android:layout_marginEnd="109dp"
+            android:layout_marginRight="109dp"
+            android:layout_weight="0.1"
+            android:background="#4354A4"
+            android:textColor="#fff"
+            android:text="c"/>
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_weight="0.3"
+            android:onClick="sendhaha"
+            android:padding="0dp"
+            android:text=">>"
+            android:background="#4354A4"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="53dp"
+            android:layout_marginRight="53dp"
+            android:layout_weight="0.1"
+            android:background="#4354A4"
+            android:text="s"
+            android:textColor="#fff"/>
+
+        <EditText
+            android:id="@+id/ed"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/white"
+            android:hint="Enter Text..."
+            android:textColor="#000"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
